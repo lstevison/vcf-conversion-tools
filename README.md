@@ -20,3 +20,5 @@ Tools to (1) convert to and from vcf format, (2) convert between LDhat, fastPHAS
 (3) The following programs are useful for creating bed files of a subset of overlapping SNPs from a VCF file:
 'CreateChrBedFromVCF.pl'  #creates BED file with bins of 4k SNPs, 100 overlapping, useful for running LDhat
 'CreateChrBedFromVCF2.pl'   #creates BED file with bins of 400 SNPs, 100 overlapping, useful for running PHASE
+
+For citing purposes: http://dx.doi.org/10.5281/zenodo.10288
