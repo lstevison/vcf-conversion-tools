@@ -9,7 +9,7 @@ $output2 = $ARGV[2];
 $sample_size = $ARGV[3];
 
 unless ($#ARGV==3) {
-    print STDERR "Please provide name of input vcf file, filename for fastPHASE formatted output, filename for positions file, and sample size on command line\n\n";
+    print STDERR "Please provide the name of your input vcf file. Additionally, provide a filename for the two outputs - the fastPHASE formatted genotype output and a positions file. Finally, please include the sample size on command line\n\n";
     die;
 } #end unless
 
