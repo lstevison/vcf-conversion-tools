@@ -8,16 +8,15 @@
 $fP_input = $ARGV[0];
 $fP_output = $ARGV[1];
 $VCF = $ARGV[2];
-$VCF_out = $VCF; 
-$VCF_out=~s/\.recode\.vcf/\.phased\.vcf/;
-$block=$ARGV[3];
+$VCF_out=$ARGV[3];
+$block=$ARGV[4];
 
 @filename = split(/\./, $fP_input);
 @chr = split(/\//, $filename[0]);
 $error_report = "error_report.$chr[1].txt";
 
-unless ($#ARGV==3) {
-    print STDERR "Please provide name of fastPHASE input and output filenames, the original VCF filename, and the synteny block number on command line\n\n";
+unless ($#ARGV==4) {
+    print STDERR "Please provide name of fastPHASE input and output filenames, the original VCF filename and an output VCF filename, and the synteny block number on command line\n\n";
     die;
 } #end unless
 
